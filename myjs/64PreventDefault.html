@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- prevent default single click pr linke active nhi kre ga , double click pr link active kre ga  -->
+  <a href="https://www.google.com" id="anchor">click Me </a>
+<script>
+ let link = document.getElementById("anchor");
+ link.addEventListener('click',function(e){
+    console.log("link clicked..");
+    e.preventDefault();
+ })
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <li class="c1">list 1</li>
+        <li id="first">list 2</li>
+        <li class="c1"> list 3</li>
+    </ul> -->
+
+    <!---------------------- Select an element by "Class Name "  ------------------------->
+    
+    <!-- <ul>
+        <li class="c1">list 1</li>
+        <li class="c1"> list 3</li>
+    </ul> -->
+<!---------------- select an element by "Tag Name"  ---------------------->
+ <!-- <h2>heading 1</h2>
+ <p>pragraoh 1</p>
+ <h2>heading 2</h2>
+ <p>pragraph 2</p>
+ <h2>heading 3</h2>
+ <p>pragraph 3</p> -->
+
+
+ <!---------------------------  Query Selector in javascript      ------------------------------->
+<!-- 
+ <div class="div1">
+    <p class="intro">pragraph</p>
+    <p class="intro">pragraph</p>
+ </div> -->
+
+ <!-------------------------------- Traversing elements -------------------------------->
+  
+<!-- <h2>heading 1</h2>
+<ul id="intro">
+    <li >list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+</ul>
+<ul>
+    <li>list a</li>
+    <li>list b</li>
+    <li>list c</li>
+    <li>list d</li>
+</ul> -->
+
+<!------------------------------------ innerHTML ------------------------------------------------------>
+<!-- <div id="intro">
+    <p>Hellow is a Tag</p>
+</div> -->
+
+<!--------------------------------------- Creat and Append Element  ---------------------------------------->
+<!-- <div id="intro">
+    <p>this p tag</p>
+</div> -->
+
+<!------------------------------ Insert Before an Element   ------------------------------------------->
+   <!-- <ul id="list">
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+   </ul>
+    -->
+   
+   <!------------------- copy or clone Element    ---------------------->
+   <!-- <ul id="menu">
+    <li>Home</li>
+    <li>Services </li>
+    <li>About</li>
+    <li>Contact</li>
+   </ul>  -->
+<!-------------------- replace element------------------- -->
+<!-- <ul id="menu">
+    <li>Home</li>
+    <li>Services </li>
+    <li>About</li>
+    <li>Contact</li>
+   </ul>  -->
+
+   <!------------------- inser adjusent HTML------------------- -->
+   <!-- beforbeging -->
+   <!-- <div id="intro"> selected -->
+    <!-- afterbeging -->
+    <!-- <h2>heading</h2>
+    <p> This is a para tag </p> -->
+    <!-- beforeend -->
+   <!-- </div> -->
+   <!-- afterend -->
+   <script>
+        // let elm = document.getElementById("first")
+        // console.log(elm);
+
+        /*---------------------- Select an element by "Class Name "  -------------------------*/
+    //   let elm = document.getElementsByClassName("c1");
+    //   //same trah ke elements(class ) ke liye arry ka use ho t hai 
+    //   for(let i =0; i<=elm.length; i++){
+    //    elm[i].innerHTML = "This is class hellow";
+    //   }
+    
+
+  /*-------------------------- select an element by "Tag Name"  -------------------*/
+//   let elm = document.getElementsByTagName("h2");
+//   for(let i =0; i<elm.length; i++){
+//     elm[i].innerHTML = "hellow kajal";
+//   }
+
+//   let elm1 = document.getElementsByTagName("h2");
+//   for(let i =0; i<=elm1.length; i++){
+//     elem1[i].innerHTML = "<p>by tag name pragraph </p>";
+//   }
+
+
+/*------------------------------ Query Selector in javascript  ------------------------------*/
+//    let elm = document.querySelectorAll ("p.intro");
+//    console.log(elm);
+   
+//    for(let i =0; i<= elm.length; i++){
+//     elm[i].innerHTML = "Hello query";
+//    }
+
+/*----------------------------- Traversing Elements -----------------------------------*/
+//    let elm = document.getElementById("intro");
+// //    let prt = elm.parentElement;
+// //    let node = elm.firstElementChild;
+// //    let nodel = elm.lastElementChild;
+// let elmall  = elm.children;
+// for(let i =0; i<=elmall.length;i++){
+//     elmall[i].innerHTML = "child elment";
+// }
+//    console.log(prt);
+   
+/*------------------------------- innerHTML --------------------------*/
+//    let elm = document.getElementById("intro");
+//  //  let con = elm.innerHTML;//fetch innerhtml data
+//  elm.innerHTML = "<h1>hellow innerHTMLL </>";
+   
+
+/*-------------------------------- Creat and Append Element   -------------------------------*/    
+// let elm = document.getElementById("intro");
+// let h1  = document.createElement("h1");
+//h1.innerHTML="this is append text imn div";
+//-------------------------------------------------------------
+//h1.textContent = "add text using textContent property";
+// let text = document.createTextNode("This is h1 tag");
+// h1.appendChild(text);
+//------------------------------------------------------------
+
+
+// h1.className = "try pi";
+// h1.id ="introid";
+// let btn = document.createElement("button")
+// btn.innerHTML = "submit";
+
+// elm.appendChild(h1);
+// h1.appendChild(btn);
+/*------------------------- Insert Before an Element -----------------------------------------------------------*/
+// appendchil ka use krne pr create kiye gye new elemett div tag ya kisi bhi tag mai jaa ke last mai inter ho rha tha 
+//to jab hamai new element kahi bhi yani beech mai jodna ho to inser before ka use krete hai.
+
+// let list1 = document.getElementById("list");//parent
+// let item = document.createElement("li");
+// item.textContent ="insertbefore";
+
+// let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;
+// list1.insertBefore(item,pos);
+
+
+/*----------------------- colon or copy element  ------------------------*/
+// let menu = document.getElementById("menu");
+// let cloneElm = menu.cloneNode(true);
+// cloneElm.id ="mobil-menu";
+// document.body.appendChild(cloneElm);
+
+
+/*------------------------------ replace element  --------------------------------*/
+// let parent = document.getElementById("menu");
+// let item =document.createElement("li");
+// item.textContent ="replaceElement";
+// let replace = parent.firstElementChild.nextElementsibling;
+
+// parent.replaceChild(item,replace);
+
+/*-------------------- insert  adjesunt html --------------------------------*/
+  let elm = document.getElementById("intro");
+  let html = "<h1> new h1 </h1>";
+  elm.insertAdjacentHTML('afterend',html)
+
+</script>
+</body>
+</html>

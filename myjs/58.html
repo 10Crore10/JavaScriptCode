@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Load Event </title>
+</head>
+<body>
+    <!-- DOmContentLoaded - the browser fully loaded HTML and compled building the DOM tree. However, it hasn't loaded external resources like stylesheet and images. In this event, you can start selecting DOM nodes or inialize the interface. -->
+   <!-- load - The browser fully loaded the HTML and also external resources like imagesand stylesheet .
+    When you leave the page, the following events fire in Sequesnce: -->
+
+ <img width="500px" src="https://tse3.mm.bing.net/th?id=OIP.GvBN5-ewcfza3xo6xbw5CwHaEK&pid=Api&P=0&h=180" alt="">
+<script>
+
+window.addEventListener('DomContentLoaded', function (){
+ console.log("DOM tree created ");
+});
+ 
+window.addEventListener('load',function(){
+    console.log("FIlly Loaded ");
+})
+
+</script>
+
+</body>
+</html>

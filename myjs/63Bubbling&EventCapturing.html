@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling & Event Capturing</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: cornsilk;
+        }
+        #myDiv{
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- Event Bubbling : an evvent start at the most specific element and then flows upward toward the least specific element (the document or even window ) 
+button--) div with id container --) body --) html --) document
+
+2.Event Capturing : an event starts at the least specific element and flows downward toward the most specific element and flows downward toward the most specifi element.
+
+-->
+    
+<div id="myDiv">
+    <button id="btn">click me</button>
+</div>
+
+
+    <script>
+  let d = document.getElementById("myDiv");
+  let b = document.getElementById("btn");
+
+  b.addEventListener('click', btnClicked);
+  d.addEventListener('click', divClicked);
+  document.body.addEventListener('click',bodyClicked,'false');
+
+  function btnClicked(){
+    console.log("button clicked....");
+  }
+
+  function divClicked(){
+    console.log("div clicked....");
+  }
+
+  function bodyClicked(){
+    console.log("body clicked....");
+  }
+    </script>
+</body>
+</html>

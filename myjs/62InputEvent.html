@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event....  </title>
+</head>
+<body>
+
+    <form action="">
+ <input type="text" placeholder="name" id ="myInput">
+
+    </form>
+    <script>
+ let x = document.getElementById("myInput");
+ x.addEventListener('focus', myFocusFunction);
+ x.addEventListener('blur',myBlurFunction);
+x.addEventListener('change', function(){
+    console.log(this.value);
+});
+
+ function myFocusFunction(){
+  x.style.background ="yellow";
+ }
+    function myBlurFunction(){
+ x.style.background ="white";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events </title>
+<style>
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(190, 21, 108);
+    }
+    /* ---------------------- */
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(8, 11, 96);
+    }
+    /* ----------------------- */
+    .box3{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(212, 215, 21);
+    }
+</style>
+
+</head>
+<body>
+ <div class="box1" onclick="fun()">
+<!-- this div use on click event  -->
+ </div>
+
+ <div class="box2"   oncontextmenu="fun2()">
+<!-- this div use oncontextmenu -->
+ </div>
+
+ <div class="box3"   ondblclick="fun3()">
+<!-- this div use double click Event  -->
+ </div>
+    <script>
+        // This function on click event 
+ function fun(){
+    alert(" clicked event   ");
+ }
+
+//  this function call right click event 
+ function fun2(){
+    alert("right event is clicked ");
+ }
+
+
+//  This function use double clicl event 
+ function fun3(){
+    alert("double clicked ");
+ }
+    </script>
+</body>
+</html>

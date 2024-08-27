@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Computed CSS</title>
+</head>
+<body>
+    <button id="btn" name="form1">
+        submit
+    </button>
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        let css = getComputedStyle(btn);// object ka name batana hai 
+        console.log(css.color);
+    </script>
+</body>
+</html>

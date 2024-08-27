@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width and height of an Element </title>
+</head>
+<style>
+    .color{
+        background-color: yellow;
+        height: 400px;
+    }
+    .dim{
+        border: 1px solid red;
+        padding: 100px;
+    }
+    .box{
+        height: 30px;
+    }
+</style>
+<body>
+        
+    <div id="box" class="color  dim">
+        <p>This is dummy text  .</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+   let width = box.offsetWidth;
+   let height = box.offsetHeight;
+
+   console.log(width);
+   console.log(height);
+// ofsetwidth =  mai border aur padding, margin dono include ho ta hai
+    //client width  = border aur margin include nhi ho ta hai sirf padding include ho ta hai 
+    </script>
+    
+</body>
+</html>

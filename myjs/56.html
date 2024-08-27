@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    
+    <button id="btn" onClick="btnClick()">Click me </button>
+
+    <button id="btn" >Submit</button>
+   <script>
+
+// function btnClick(){
+//     alert("button was clicked !");
+// }
+//   let btn = document.getElementById("btn");
+//   btn.addEventListener('click' , btnClick); //addEverntListener('Event Name ',function Name )
+
+//--------------- using anonymous function
+let btn = document.getElementById("btn");
+btn.addEventListener('click', function(){
+    console.log("it ws clicked!");
+});
+// yes we can add multiple eventlisten on On one button 
+btn.addEventListener('mouseover',function(){
+    console.log("mouse over is activated");
+});
+
+btn.addEventListener('mouseout', function(){
+console.log("mouse is OUT");
+});
+
+
+//------------------------------
+
+    // function btnClick(){
+    //     alert("it has clicked");
+    // }
+
+        //DOM Events
+        //DOm events are action that occure as a result of user action or as result of state change  of the elemnts of a DOM tree 
+        //Example of HTML events : 
+        //When a user click the mouse 
+        //When a web page has loaded 
+        //When an image has been loaded 
+        //When a mouse over an elements 
+    </script>
+
+</body>
+</html>

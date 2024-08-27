@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Function</title>
+</head>
+<body>
+  
+    
+
+
+
+    <script>
+        let team = [
+            {
+                name : 'kaju',
+                position : 'developer'
+            },
+            {
+                name : 'kajal',
+                position : 'developer'
+            },
+            {
+                name : 'kaajuu',
+                position : 'developer'
+            },
+            {
+                name : 'kajaal',
+                position : 'developer'
+            }
+        ];
+        let dev = team.filter(val => val.position == "developer");
+        console.log(dev)
+    </script>
+</body>
+</html>

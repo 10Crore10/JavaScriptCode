@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #white {
+            background-color: antiquewhite;
+        }
+
+        #aqua {
+
+            background-color: aqua;
+        }
+
+        #violet {
+            background-color: #ce9aff;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #color-switcher {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-switcher">
+
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#c39aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+
+    </div>
+
+    <h1 class="text">About US </h1>
+    <img src="./myjspra/image/myjs.jpeg" alt="myimage">
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quaerat voluptate. Nemo at officia eaque
+        perspiciatis repellat doloremque cumque delectus vel, minus tempore assumenda ex voluptatem nesciunt facere
+        corporis, fugiat molestias! Accusantium exercitationem consequatur harum possimus iure vero reiciendis labore
+        ducimus omnis placeat quis iusto at beatae mollitia alias aut facere quo soluta dolores id dolorum laboriosam,
+        voluptates earum! Quaerat, corporis culpa molestias eaque neque tenetur alias, tempora hic libero fugit quis
+        sapiente esse reprehenderit eius laborum, architecto nobis optio. Eum, facilis est odio, corporis consequatur
+        maiores laboriosam atque ullam asperiores eos quae incidunt reprehenderit explicabo porro eligendi dolorem
+        numquam magnam, delectus enim libero consectetur alias ea molestiae. Quis, rem blanditiis, reprehenderit
+        corrupti fugit repudiandae alias sint animi eius nostrum dolorum aliquid doloremque fugiat atque veniam facilis
+        aperiam. Earum velit a corrupti voluptatem quia delectus voluptatibus totam tenetur autem quisquam eum libero,
+        ad temporibus ipsum quidem sit accusantium officiis! Modi architecto iste ea tempore temporibus doloremque fuga
+        assumenda enim suscipit hic dolor ipsa consectetur laudantium, totam itaque molestiae illo. Fugit deserunt,
+        error, reprehenderit debitis, officia odit cumque tenetur nemo iste esse excepturi vel quo. Enim cum ullam
+        veritatis amet. Eveniet exercitationem libero nisi magnam eum aperiam quas consectetur quibusdam nam?
+    </p>
+
+
+
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text")
+            if (color == "#000000") {
+                for (let elm of txt) {
+                    elm.style.color = "white";
+                }
+               
+
+                }
+                else{
+                    for (let elm of txt) {
+                    elm.style.color = "black";
+                } 
+            }
+        }
+    </script>
+</body>
+
+</html>
